@@ -45,7 +45,7 @@ const columns = [
   },
 ];
 
-const App = () => {   
+  
   const Export = () => {
     var wsheet = XLSX.utils.json_to_sheet(dataSource  );
    var wbook = XLSX.utils.book_new(); 
@@ -59,7 +59,7 @@ var b = new Blob([excelBuffer], {
    saveAs(b,"buggy-routes.xlsx");
   }
   
-
+  const App = () => { 
   return (
     <div style={{ padding: 20 }}>
      <div style={{ marginBottom: 16, textAlign: "right" }}>
